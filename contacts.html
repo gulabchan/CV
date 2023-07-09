@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Touch</title>
+</head>
+
+<body>
+    <h3>Contacts Details</h3>
+    <ul>
+        <li>Contact no:8905433093 </li>
+        <li>Email:gulabchandkumarg@gmail.com </li>
+        <li>Address:Siwan Bihar near RAM nagar </li>
+    </ul>
+    <hr>
+    <form action="mailto:gulabchandkumarg@gmail.com" method="post" enctype="text/plain">
+        <label for="">Your Name:</label>
+        <input name="yourNmae" type="text" /><br />
+        <label for="">Your Email:</label>
+        <input name="yourEmail" type="email" /><br />
+        <label for="">Your Message:</label><br />
+        <textarea name="yourMessage" id="" cols="30" rows="10"></textarea><br />
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+        <p>Click on the "Choose File" button to upload a file:</p><br>
+<!-- 
+        POST is a HTTP method used to submit an HTML form to the server. When a user submits an HTML form using the POST
+        method, the form data is sent in the request body of the HTTP request. The server then processes the form data
+        and returns a response to the client. In the case of a file upload form, the server
+        will receive the file data in the request body
+        and can use it for further processing, such as storing the file in a database or uploading it to a cloud storage
+        service. -->
+
+        <form method="post">
+            <label for="file">File</label>
+            <input id="file" name="file" type="file" />
+            <button>Upload</button>
+        </form>
+
+</body>
+
+</html>
